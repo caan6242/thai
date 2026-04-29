@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thai Study Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary">
+        <div class="brand">
+          <div class="brand-mark">ท</div>
+          <div>
+            <h1>Thai Study Studio</h1>
+            <p>Vocab, listening, speaking, homework</p>
+          </div>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Study modes">
+          <button class="nav-tab active" data-view="dashboard">Overview</button>
+          <button class="nav-tab" data-view="vocab">Vocab</button>
+          <button class="nav-tab" data-view="quiz">Quiz</button>
+          <button class="nav-tab" data-view="conversation">Conversation</button>
+          <button class="nav-tab" data-view="listening">Listening</button>
+          <button class="nav-tab" data-view="lessons">Lessons</button>
+          <button class="nav-tab" data-view="homework">Homework</button>
+        </nav>
+      </aside>
+
+      <main>
+        <section class="topbar" aria-label="Study status">
+          <div>
+            <p class="eyebrow">Today's focus</p>
+            <h2 id="focusTitle">Build confidence with simple Thai</h2>
+          </div>
+          <div class="stats-row">
+            <div>
+              <span id="wordCount">0</span>
+              <small>words</small>
+            </div>
+            <div>
+              <span id="streakCount">0</span>
+              <small>correct</small>
+            </div>
+            <div>
+              <span id="practiceCount">0</span>
+              <small>sessions</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="view active" id="dashboard">
+          <div class="hero-panel">
+            <div>
+              <p class="eyebrow">Start here</p>
+              <h2>Upload your lists, then practice by reading, listening, and replying.</h2>
+              <p>
+                This first version stores your data in this browser. Use Thai script, romanization,
+                English meaning, category, and notes if you have them.
+              </p>
+            </div>
+            <div class="quick-actions">
+              <button class="primary" data-jump="vocab">Upload vocab</button>
+              <button data-jump="lessons">Browse lessons</button>
+              <button data-jump="quiz">Start quiz</button>
+              <button data-jump="conversation">Practice chat</button>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel">
+              <div class="panel-heading">
+                <h3>Review queue</h3>
+                <button class="icon-btn" id="shuffleQueue" title="Shuffle queue" aria-label="Shuffle queue">↻</button>
+              </div>
+              <div class="review-list" id="reviewList"></div>
+            </article>
+            <article class="panel">
+              <h3>Word builder</h3>
+              <div id="wordBuilder"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="vocab">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Your word bank</p>
+              <h2>Upload or add Thai vocabulary</h2>
+            </div>
+            <button id="loadSample">Load sample set</button>
+          </div>
+
+          <div class="split-layout">
+            <article class="panel">
+              <h3>Import list</h3>
+              <p class="hint">CSV or TSV columns: thai, romanization, english, category, notes. Headers are optional.</p>
+              <input type="file" id="fileInput" accept=".csv,.tsv,.txt" />
+              <textarea id="pasteBox" placeholder="สวัสดี,sawatdee,hello,greetings,polite everyday greeting"></textarea>
+              <button class="primary" id="importPaste">Import pasted rows</button>
+            </article>
+
+            <article class="panel">
+              <h3>Add one word</h3>
+              <form id="wordForm" class="word-form">
+                <input name="thai" placeholder="Thai script" required />
+                <input name="romanization" placeholder="Romanization" />
+                <input name="english" placeholder="English meaning" required />
+                <input name="category" placeholder="Category" />
+                <textarea name="notes" placeholder="Notes or example sentence"></textarea>
+                <button class="primary" type="submit">Add word</button>
+              </form>
+            </article>
+          </div>
+
+          <article class="panel word-bank-panel">
+            <div class="panel-heading">
+              <h3>Saved words</h3>
+              <button id="clearWords">Clear all</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Thai</th>
+                    <th>Romanization</th>
+                    <th>English</th>
+                    <th>Category</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="wordTable"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="quiz">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Recall practice</p>
+              <h2>Quiz yourself from your own lists</h2>
+            </div>
+            <div class="segmented">
+              <button class="active" data-quiz-mode="thaiToEnglish">Thai → English</button>
+              <button data-quiz-mode="englishToThai">English → Thai</button>
+              <button data-quiz-mode="listening">Listening</button>
+            </div>
+          </div>
+
+          <article class="quiz-panel">
+            <div class="quiz-card">
+              <p class="eyebrow" id="quizCategory">Category</p>
+              <h3 id="quizPrompt">Add vocabulary to begin</h3>
+              <p id="quizSubprompt"></p>
+              <button id="speakQuiz" class="icon-btn" title="Play Thai audio" aria-label="Play Thai audio">▶</button>
+            </div>
+            <div class="answer-area">
+              <input id="quizAnswer" placeholder="Type your answer" />
+              <button class="primary" id="checkAnswer">Check</button>
+              <button id="nextQuestion">Next</button>
+            </div>
+            <div class="feedback" id="quizFeedback"></div>
+          </article>
+        </section>
+
+        <section class="view" id="conversation">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Patient speaking practice</p>
+              <h2>Slow conversations with gentle prompts</h2>
+            </div>
+            <select id="scenarioSelect" aria-label="Conversation scenario">
+              <option value="cafe">Cafe order</option>
+              <option value="intro">Introductions</option>
+              <option value="market">At the market</option>
+              <option value="directions">Directions</option>
+            </select>
+          </div>
+
+          <article class="conversation-shell">
+            <div class="chat-log" id="chatLog"></div>
+            <div class="coach-panel">
+              <button id="conversationSpeak">Play last Thai</button>
+              <button id="slowSpeak">Slower</button>
+              <button id="hintButton">Hint</button>
+            </div>
+            <form id="replyForm" class="reply-form">
+              <input id="replyInput" placeholder="Reply in Thai, romanization, or English" />
+              <button class="primary" type="submit">Send</button>
+            </form>
+          </article>
+        </section>
+
+        <section class="view" id="listening">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Basic clips</p>
+              <h2>Listen, replay, then identify what you heard</h2>
+            </div>
+            <button id="newClip">New clip</button>
+          </div>
+
+          <article class="listening-layout">
+            <div class="clip-stage">
+              <p class="eyebrow" id="clipLevel">Beginner</p>
+              <h3 id="clipThai">สวัสดีค่ะ</h3>
+              <p id="clipRomanization">sawatdee kha</p>
+              <button class="primary" id="playClip">Play clip</button>
+            </div>
+            <div class="panel">
+              <h3>What did it mean?</h3>
+              <div id="clipChoices" class="choice-list"></div>
+              <div id="clipFeedback" class="feedback"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" id="lessons">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Beginner path</p>
+              <h2>Short lessons for everyday Thai</h2>
+            </div>
+            <div class="lesson-actions">
+              <button id="previousLesson">Previous</button>
+              <button class="primary" id="nextLesson">Next lesson</button>
+            </div>
+          </div>
+
+          <div class="lessons-layout">
+            <aside class="lesson-list" id="lessonList" aria-label="Beginner lessons"></aside>
+            <article class="lesson-detail">
+              <div class="lesson-hero">
+                <p class="eyebrow" id="lessonNumber">Lesson 1</p>
+                <h3 id="lessonTitle">Greetings</h3>
+                <p id="lessonGoal"></p>
+              </div>
+              <div class="lesson-section">
+                <h4>Core words</h4>
+                <div class="lesson-vocab" id="lessonVocab"></div>
+              </div>
+              <div class="lesson-section">
+                <h4>Example phrases</h4>
+                <div class="phrase-list" id="lessonPhrases"></div>
+              </div>
+              <div class="lesson-section">
+                <h4>Practice</h4>
+                <div class="practice-list" id="lessonPractice"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="homework">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Homework helper</p>
+              <h2>Break down Thai assignments step by step</h2>
+            </div>
+            <button id="useVocabInHomework">Use my vocab</button>
+          </div>
+
+          <div class="homework-grid">
+            <article class="panel">
+              <h3>Paste your exercise</h3>
+              <textarea id="homeworkInput" placeholder="Paste Thai sentences, assignment instructions, or your attempted answer here."></textarea>
+              <div class="button-row">
+                <button class="primary" id="analyzeHomework">Analyze</button>
+                <button id="makePractice">Make practice</button>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Study notes</h3>
+              <div id="homeworkOutput" class="notes-output"></div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="lookup-popover hidden" id="lookupPopover" role="dialog" aria-live="polite"></div>
+
+    <script src="app.js?v=lessons-lookup-2"></script>
+  </body>
+</html>
