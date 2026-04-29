@@ -42,6 +42,14 @@ streamlit run streamlit_app.py
 
 The Streamlit version stores spaced-repetition cards in `thai_study.db`.
 
+The Streamlit version includes:
+
+- richer beginner lessons with teaching notes, patterns, examples, drills, and audio buttons
+- slow conversation practice with normal/slow playback and AI coach replies
+- AI homework help
+- uploaded audio transcription and listening notes
+- SQLite spaced repetition
+
 ## OpenAI API Key
 
 For local Streamlit use, create `.streamlit/secrets.toml`:
