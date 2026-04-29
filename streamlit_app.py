@@ -417,6 +417,121 @@ for lesson in LESSONS:
     if expansion.get("detail_sections"):
         lesson["detail_sections"] = lesson.get("detail_sections", []) + expansion["detail_sections"]
 
+MORE_LESSONS = [
+    {
+        "title": "People and Pronouns",
+        "goal": "Use I, you, he/she, we, and people words in simple sentences.",
+        "teach": "Thai pronouns depend on politeness and context. As a beginner, คุณ is a safe 'you', ฉัน is a useful 'I', ผม is common for male speakers, and เขา can mean he/she/they.",
+        "pattern": "person + verb + object",
+        "vocab": [("คุณ", "khun", "you"), ("เขา", "khao", "he / she / they"), ("เรา", "rao", "we / us"), ("คน", "khon", "person"), ("เพื่อน", "phuean", "friend"), ("นักเรียน", "nak rian", "student"), ("ครู", "khruu", "teacher"), ("ผู้หญิง", "phuu ying", "woman"), ("ผู้ชาย", "phuu chaai", "man")],
+        "examples": [("คุณเป็นครูไหม", "khun pen khruu mai", "Are you a teacher?"), ("เขาเป็นเพื่อนของฉัน", "khao pen phuean khong chan", "He/she is my friend."), ("เราเรียนภาษาไทย", "rao rian phasaa thai", "We study Thai."), ("มีนักเรียนกี่คน", "mee nak rian gee khon", "How many students are there?")],
+        "detail_sections": [("Beginner-safe pronouns", ["คุณ is polite and safe for you.", "ฉัน works for I in many beginner contexts.", "ผม is a common I for male speakers.", "เขา can mean he, she, or they depending on context."]), ("คน as classifier", ["คน means person.", "It is also the classifier for people.", "สองคน = two people, กี่คน = how many people."]), ("ของ for possession", ["ของ means of/belonging to.", "เพื่อนของฉัน = my friend.", "บ้านของเขา = his/her house."])],
+        "drills": ["Say we study Thai.", "Ask are you a teacher?", "Say my friend.", "Ask how many people.", "Make one sentence with เขา."],
+    },
+    {
+        "title": "Family",
+        "goal": "Talk about close family members and siblings.",
+        "teach": "Thai has specific family words. พี่ and น้อง depend on relative age, not gender by themselves.",
+        "pattern": "ฉันมี + family member",
+        "vocab": [("ครอบครัว", "khrop khrua", "family"), ("แม่", "mae", "mother"), ("พ่อ", "pho", "father"), ("พี่", "phee", "older sibling"), ("น้อง", "nong", "younger sibling"), ("ลูก", "luuk", "child"), ("พี่ชาย", "phee chaai", "older brother"), ("พี่สาว", "phee saao", "older sister"), ("น้องชาย", "nong chaai", "younger brother"), ("น้องสาว", "nong saao", "younger sister")],
+        "examples": [("นี่คือแม่ของฉัน", "nee khue mae khong chan", "This is my mother."), ("ฉันมีน้องสาวหนึ่งคน", "chan mee nong saao nueng khon", "I have one younger sister."), ("พ่ออยู่บ้าน", "pho yuu baan", "Father is at home."), ("ครอบครัวของฉันอยู่สวีเดน", "khrop khrua khong chan yuu sa-wee-den", "My family is in Sweden.")],
+        "detail_sections": [("Older and younger", ["พี่ = older sibling/person close to you.", "น้อง = younger sibling/person close to you.", "Add ชาย for male and สาว for female if needed."]), ("Having family", ["มี means have/there is.", "ฉันมี... = I have...", "Use คน as classifier for people: หนึ่งคน, สองคน."]), ("Possession", ["ของฉัน = my/mine.", "แม่ของฉัน = my mother.", "ครอบครัวของฉัน = my family."])],
+        "drills": ["Say mother and father.", "Say I have one younger sibling.", "Introduce a family member.", "Say my family is at home.", "Ask how many siblings someone has."],
+    },
+    {
+        "title": "Feelings and States",
+        "goal": "Say how you feel and ask how someone is.",
+        "teach": "Many Thai feeling words behave like adjectives or states. You can say ฉันเหนื่อย without an extra 'am'.",
+        "pattern": "person + feeling word",
+        "vocab": [("สบายดี", "sabai dee", "well"), ("เหนื่อย", "nueai", "tired"), ("หิว", "hiw", "hungry"), ("ดีใจ", "dee jai", "happy / glad"), ("เสียใจ", "sia jai", "sad / sorry"), ("ร้อน", "ron", "hot"), ("หนาว", "naao", "cold"), ("กลัว", "glua", "afraid"), ("ง่วง", "nguang", "sleepy")],
+        "examples": [("วันนี้ฉันเหนื่อย", "wan nee chan nueai", "Today I am tired."), ("คุณหิวไหม", "khun hiw mai", "Are you hungry?"), ("ฉันดีใจมาก", "chan dee jai maak", "I am very happy."), ("ไม่เป็นไร", "mai pen rai", "It's okay.")],
+        "detail_sections": [("No extra 'am'", ["Thai often does not need am/is/are.", "ฉันเหนื่อย = I tired = I am tired.", "เขาหิว = He/she is hungry."]), ("Asking feelings", ["Add ไหม to ask a yes/no question.", "คุณเหนื่อยไหม = Are you tired?", "คุณสบายดีไหม = How are you?"]), ("มาก for intensity", ["มาก means very/much.", "เหนื่อยมาก = very tired.", "ดีใจมาก = very happy."])],
+        "drills": ["Say I am tired.", "Ask are you hungry?", "Say I am very happy.", "Say it is okay.", "Describe how you feel today."],
+    },
+    {
+        "title": "Places Around Town",
+        "goal": "Ask for common places while traveling.",
+        "teach": "Place words combine well with อยู่ที่ไหน for 'where is...?' and ไป...ยังไง for 'how do I get to...?'",
+        "pattern": "place + อยู่ที่ไหน / ไป + place + ยังไง",
+        "vocab": [("โรงแรม", "rong raem", "hotel"), ("ร้านอาหาร", "raan aa-haan", "restaurant"), ("โรงเรียน", "rong rian", "school"), ("โรงพยาบาล", "rong pha-yaa-baan", "hospital"), ("สถานี", "sathanee", "station"), ("ธนาคาร", "tha-naa-khaan", "bank"), ("ตลาด", "ta-laat", "market"), ("สนามบิน", "sa-naam bin", "airport"), ("ห้องน้ำ", "hong nam", "bathroom")],
+        "examples": [("ห้องน้ำอยู่ที่ไหน", "hong nam yuu tee nai", "Where is the bathroom?"), ("ไปโรงแรมยังไง", "pai rong raem yang ngai", "How do I get to the hotel?"), ("ร้านอาหารอยู่ใกล้ไหม", "raan aa-haan yuu glai mai", "Is the restaurant nearby?"), ("ตลาดอยู่ข้างหน้า", "ta-laat yuu khaang naa", "The market is ahead.")],
+        "detail_sections": [("Where is...", ["อยู่ที่ไหน asks where something is located.", "ห้องน้ำอยู่ที่ไหน is an essential travel phrase.", "Place + อยู่ที่ไหน works for many locations."]), ("How to get to...", ["ไป...ยังไง asks how to go somewhere.", "ไปสถานียังไง = How do I get to the station?", "Use polite endings when asking strangers."]), ("Near/far", ["ใกล้ = near.", "ไกล = far.", "อยู่ใกล้ไหม = Is it nearby?"])],
+        "drills": ["Ask where the bathroom is.", "Ask how to get to the hotel.", "Say the market is ahead.", "Ask if the restaurant is nearby.", "Name five town places."],
+    },
+    {
+        "title": "School and Homework",
+        "goal": "Talk about class, teachers, books, and homework.",
+        "teach": "เรียน means study/learn. ทำ means do/make. Thai homework is การบ้าน, literally work for home.",
+        "pattern": "ฉัน + เรียน/ทำ + school word",
+        "vocab": [("เรียน", "rian", "study / learn"), ("โรงเรียน", "rong rian", "school"), ("ครู", "khruu", "teacher"), ("การบ้าน", "gaan baan", "homework"), ("หนังสือ", "nang sue", "book"), ("ปากกา", "bpaak gaa", "pen"), ("ดินสอ", "din sor", "pencil"), ("คำถาม", "kham thaam", "question"), ("คำตอบ", "kham top", "answer")],
+        "examples": [("ฉันทำการบ้าน", "chan tham gaan baan", "I do homework."), ("ครูพูดช้าๆได้ไหม", "khruu phuut chaa chaa dai mai", "Teacher, can you speak slowly?"), ("หนังสืออยู่บนโต๊ะ", "nang sue yuu bon to", "The book is on the table."), ("ฉันมีคำถาม", "chan mee kham thaam", "I have a question.")],
+        "detail_sections": [("เรียน vs สอน", ["เรียน = study/learn.", "สอน = teach.", "ครูสอนภาษาไทย = The teacher teaches Thai."]), ("Classroom requests", ["พูดช้าๆได้ไหม = Can you speak slowly?", "พูดอีกครั้งได้ไหม = Can you say it again?", "ฉันไม่เข้าใจ = I do not understand."]), ("School objects", ["หนังสือ = book.", "ปากกา = pen.", "ดินสอ = pencil.", "Use อยู่ to say where they are."])],
+        "drills": ["Say I do homework.", "Ask the teacher to speak slowly.", "Say I have a question.", "Say the book is on the table.", "Name three school objects."],
+    },
+    {
+        "title": "Months and Dates",
+        "goal": "Recognize months and ask about dates.",
+        "teach": "วันที่ means date/day number. เดือน means month. Thai month names can be long, so start with recognition and your own birthday month.",
+        "pattern": "วันที่ + number / เดือน + month",
+        "vocab": [("เดือน", "duean", "month"), ("วันที่", "wan tee", "date"), ("มกราคม", "makaraa-khom", "January"), ("กุมภาพันธ์", "gumphaa-phan", "February"), ("มีนาคม", "meenaa-khom", "March"), ("เมษายน", "mesaa-yon", "April"), ("พฤษภาคม", "phruetsapha-khom", "May"), ("มิถุนายน", "mithunaa-yon", "June"), ("ธันวาคม", "thanwaa-khom", "December")],
+        "examples": [("วันนี้วันที่เท่าไหร่", "wan nee wan tee tao rai", "What is today's date?"), ("เดือนเมษายน", "duean mesaa-yon", "April."), ("วันที่หนึ่งมกราคม", "wan tee nueng makaraa-khom", "January first."), ("ฉันเกิดเดือนธันวาคม", "chan goet duean thanwaa-khom", "I was born in December.")],
+        "detail_sections": [("Date question", ["วันนี้วันที่เท่าไหร่ asks today's date.", "วันที่ + number gives the day of the month.", "เท่าไหร่ asks how much/which number."]), ("Month strategy", ["Month names are long; recognize them before producing all of them.", "Learn your birthday month first.", "เดือน before a month makes it clear you mean the month."]), ("Useful sentence", ["ฉันเกิดเดือน... = I was born in...", "เกิด means born/happen.", "Use this to practice one personal date."])],
+        "drills": ["Ask today's date.", "Say April.", "Say January first.", "Say your birthday month.", "Recognize December."],
+    },
+    {
+        "title": "Weather",
+        "goal": "Talk about weather and temperature.",
+        "teach": "อากาศ means weather or air. Weather sentences often use วันนี้ + อากาศ + adjective.",
+        "pattern": "วันนี้อากาศ + weather word",
+        "vocab": [("อากาศ", "aa-gaat", "weather / air"), ("ร้อน", "ron", "hot"), ("หนาว", "naao", "cold"), ("เย็น", "yen", "cool"), ("ฝนตก", "fon tok", "raining"), ("แดดออก", "daet ok", "sunny"), ("ลมแรง", "lom raeng", "windy"), ("เมฆ", "mek", "cloud"), ("ชื้น", "chuen", "humid")],
+        "examples": [("วันนี้อากาศร้อน", "wan nee aa-gaat ron", "Today the weather is hot."), ("ฝนตกไหม", "fon tok mai", "Is it raining?"), ("แดดออกมาก", "daet ok maak", "It is very sunny."), ("อากาศหนาวตอนเช้า", "aa-gaat naao ton chao", "The weather is cold in the morning.")],
+        "detail_sections": [("Weather pattern", ["วันนี้อากาศร้อน = Today weather hot.", "No separate 'is' needed.", "Add มาก for very."]), ("Rain and sun", ["ฝนตก literally means rain falls.", "แดดออก means sun comes out.", "Both work as full weather expressions."]), ("Time words", ["ตอนเช้า = in the morning.", "ตอนเย็น = in the evening.", "Use them to make weather more specific."])],
+        "drills": ["Say today is hot.", "Ask if it is raining.", "Say it is very sunny.", "Say cold in the morning.", "Describe today's weather."],
+    },
+    {
+        "title": "Body and Health",
+        "goal": "Say simple body and health phrases.",
+        "teach": "เจ็บ means hurt/sore and comes before or with the body part. ป่วย means sick.",
+        "pattern": "เจ็บ + body part / ฉันป่วย",
+        "vocab": [("หัว", "hua", "head"), ("มือ", "mue", "hand"), ("เท้า", "thaao", "foot"), ("ท้อง", "thong", "stomach"), ("ตา", "taa", "eye"), ("เจ็บ", "jep", "hurt / sore"), ("ป่วย", "puai", "sick"), ("ยา", "yaa", "medicine"), ("หมอ", "mor", "doctor")],
+        "examples": [("ฉันป่วย", "chan puai", "I am sick."), ("เจ็บหัว", "jep hua", "Head hurts / headache."), ("ฉันเจ็บท้อง", "chan jep thong", "My stomach hurts."), ("ต้องไปหาหมอ", "tong pai haa mor", "Need to go see a doctor.")],
+        "detail_sections": [("Pain phrases", ["เจ็บหัว = headache/head hurts.", "เจ็บท้อง = stomach hurts.", "You can add ฉัน before it: ฉันเจ็บท้อง."]), ("Sick vs hurt", ["ป่วย = sick/ill.", "เจ็บ = hurt/sore.", "Both are useful but not identical."]), ("Getting help", ["หมอ = doctor.", "ยา = medicine.", "ไปหาหมอ = go see a doctor."])],
+        "drills": ["Say I am sick.", "Say my stomach hurts.", "Name head, hand, foot.", "Say medicine.", "Say go see a doctor."],
+    },
+    {
+        "title": "Transport",
+        "goal": "Recognize common transport words and ask how to go somewhere.",
+        "teach": "รถ means vehicle and appears in many transport compounds. ไปโดย... means go by...",
+        "pattern": "ไปโดย + transport / เรียก + taxi",
+        "vocab": [("รถ", "rot", "vehicle / car"), ("รถไฟ", "rot fai", "train"), ("รถเมล์", "rot mae", "bus"), ("แท็กซี่", "thaek-see", "taxi"), ("เรือ", "ruea", "boat"), ("เครื่องบิน", "khrueng bin", "airplane"), ("สถานี", "sathanee", "station"), ("ป้ายรถเมล์", "bpaai rot mae", "bus stop"), ("ตั๋ว", "tua", "ticket")],
+        "examples": [("ไปโดยรถไฟ", "pai doi rot fai", "Go by train."), ("เรียกแท็กซี่ได้ไหม", "riak thaek-see dai mai", "Can you call a taxi?"), ("ป้ายรถเมล์อยู่ที่ไหน", "bpaai rot mae yuu tee nai", "Where is the bus stop?"), ("ซื้อตั๋วที่ไหน", "sue tua tee nai", "Where do I buy a ticket?")],
+        "detail_sections": [("รถ compounds", ["รถ = vehicle.", "รถไฟ = train, literally fire vehicle.", "รถเมล์ = bus."]), ("Going by...", ["ไปโดย... means go by...", "ไปโดยแท็กซี่ = go by taxi.", "ไปโดยรถไฟ = go by train."]), ("Station and stops", ["สถานี = station.", "ป้ายรถเมล์ = bus stop.", "อยู่ที่ไหน asks where it is."])],
+        "drills": ["Ask where the bus stop is.", "Say go by train.", "Ask to call a taxi.", "Ask where to buy a ticket.", "Name five transport types."],
+    },
+    {
+        "title": "Daily Routine",
+        "goal": "Describe your day with common routine verbs.",
+        "teach": "Thai routine sentences often use a person + verb + time. You can keep sentences short and still sound natural.",
+        "pattern": "person + verb + time",
+        "vocab": [("ตื่น", "tuen", "wake up"), ("กิน", "gin", "eat"), ("ดื่ม", "duem", "drink"), ("ทำงาน", "tham ngaan", "work"), ("กลับบ้าน", "glap baan", "go home"), ("อาบน้ำ", "aap nam", "shower"), ("นอน", "non", "sleep"), ("ตอนเช้า", "ton chao", "in the morning"), ("ตอนเย็น", "ton yen", "in the evening")],
+        "examples": [("ฉันตื่นเจ็ดโมงเช้า", "chan tuen jet mong chao", "I wake up at 7 AM."), ("ฉันกินข้าวตอนเช้า", "chan gin khao ton chao", "I eat in the morning."), ("เขาทำงานวันนี้", "khao tham ngaan wan nee", "He/she works today."), ("ฉันกลับบ้านตอนเย็น", "chan glap baan ton yen", "I go home in the evening.")],
+        "detail_sections": [("Routine verbs", ["ตื่น = wake up.", "กิน = eat.", "ดื่ม = drink.", "นอน = sleep.", "These can make a whole daily routine."]), ("Time placement", ["Time words can often go at the end.", "ฉันตื่นเจ็ดโมงเช้า.", "ฉันนอนตอนกลางคืน."]), ("ข้าว as meal", ["ข้าว means rice, but also meal/food in many phrases.", "กินข้าว can mean eat a meal.", "This is extremely common."])],
+        "drills": ["Say when you wake up.", "Say I eat breakfast/morning meal.", "Say I go home in the evening.", "Say I sleep at night.", "Build a three-sentence routine."],
+    },
+    {
+        "title": "Hobbies and Likes",
+        "goal": "Say what you like doing.",
+        "teach": "ชอบ means like. Put it before activities: ชอบอ่าน, ชอบดูหนัง, ชอบฟังเพลง.",
+        "pattern": "person + ชอบ + activity",
+        "vocab": [("ชอบ", "chop", "like"), ("อ่าน", "aan", "read"), ("ดู", "duu", "watch / look"), ("ฟัง", "fang", "listen"), ("เพลง", "phleng", "music / song"), ("หนัง", "nang", "movie"), ("เล่น", "len", "play"), ("กีฬา", "gee-laa", "sport"), ("ว่ายน้ำ", "waai nam", "swim")],
+        "examples": [("ฉันชอบอ่านหนังสือ", "chan chop aan nang sue", "I like reading books."), ("เขาชอบดูหนัง", "khao chop duu nang", "He/she likes watching movies."), ("ฉันฟังเพลงทุกวัน", "chan fang phleng thuk wan", "I listen to music every day."), ("คุณชอบทำอะไร", "khun chop tham arai", "What do you like doing?")],
+        "detail_sections": [("ชอบ + verb", ["ชอบอ่าน = like reading.", "ชอบดู = like watching.", "ชอบฟัง = like listening."]), ("Asking hobbies", ["คุณชอบทำอะไร = What do you like doing?", "ทำอะไร means do what.", "This is a friendly conversation question."]), ("ทุกวัน", ["ทุกวัน means every day.", "ฉันฟังเพลงทุกวัน = I listen to music every day.", "Use it for habits."])],
+        "drills": ["Say I like reading.", "Ask what do you like doing?", "Say I listen to music every day.", "Say I like sports.", "Make one hobby sentence about yourself."],
+    },
+]
+
+LESSONS.extend(MORE_LESSONS)
+
 CONVERSATION_SCENARIOS = {
     "Cafe order": [
         ("สวัสดีค่ะ รับอะไรดีคะ", "sawatdee kha, rap arai dee kha", "Hello, what would you like?"),
@@ -432,6 +547,48 @@ CONVERSATION_SCENARIOS = {
         ("ไปสถานีรถไฟฟ้ายังไงคะ", "pai sathanee rot fai faa yang ngai kha", "How do I get to the train station?"),
         ("ตรงไปแล้วเลี้ยวซ้ายค่ะ", "trong pai laew liao saai kha", "Go straight, then turn left."),
         ("อยู่ใกล้มากค่ะ", "yuu glai maak kha", "It is very nearby."),
+    ],
+    "Market shopping": [
+        ("อันนี้ราคาเท่าไหร่คะ", "an nee raa-khaa tao rai kha", "How much is this one?"),
+        ("ลดราคาได้ไหมคะ", "lot raa-khaa dai mai kha", "Can you lower the price?"),
+        ("เอาอันนี้หนึ่งอันค่ะ", "ao an nee nueng an kha", "I'll take one of this."),
+        ("ทั้งหมดแปดสิบบาทค่ะ", "thang mot bpaet sip baat kha", "That is 80 baht total."),
+    ],
+    "At school": [
+        ("วันนี้มีการบ้านไหมคะ", "wan nee mee gaan baan mai kha", "Is there homework today?"),
+        ("ครูพูดช้าๆได้ไหมคะ", "khruu phuut chaa chaa dai mai kha", "Teacher, can you speak slowly?"),
+        ("ฉันมีคำถามค่ะ", "chan mee kham thaam kha", "I have a question."),
+        ("ฉันไม่เข้าใจประโยคนี้ค่ะ", "chan mai khao jai bprayoak nee kha", "I do not understand this sentence."),
+    ],
+    "Making plans": [
+        ("พรุ่งนี้คุณว่างไหมคะ", "phrung nee khun waang mai kha", "Are you free tomorrow?"),
+        ("ไปกินข้าวด้วยกันไหม", "pai gin khao duai gan mai", "Do you want to go eat together?"),
+        ("เจอกันกี่โมงดี", "jer gan gee mong dee", "What time should we meet?"),
+        ("เจอกันวันเสาร์นะ", "jer gan wan sao na", "See you on Saturday."),
+    ],
+    "Hotel check-in": [
+        ("จองห้องไว้ไหมคะ", "jong hong wai mai kha", "Do you have a room reserved?"),
+        ("ขอพาสปอร์ตด้วยค่ะ", "khor passport duai kha", "Passport, please."),
+        ("ห้องของคุณอยู่ชั้นสามค่ะ", "hong khong khun yuu chan saam kha", "Your room is on the third floor."),
+        ("อาหารเช้าเริ่มเจ็ดโมงค่ะ", "aa-haan chao roem jet mong kha", "Breakfast starts at 7 o'clock."),
+    ],
+    "Doctor visit": [
+        ("เป็นอะไรคะ", "pen arai kha", "What is wrong?"),
+        ("เจ็บตรงไหนคะ", "jep trong nai kha", "Where does it hurt?"),
+        ("ฉันเจ็บท้องค่ะ", "chan jep thong kha", "My stomach hurts."),
+        ("กินยานี้หลังอาหารนะคะ", "gin yaa nee lang aa-haan na kha", "Take this medicine after food."),
+    ],
+    "Taxi ride": [
+        ("ไปที่ไหนครับ", "pai tee nai khrap", "Where are you going?"),
+        ("ไปโรงแรมนี้ค่ะ", "pai rong raem nee kha", "To this hotel, please."),
+        ("ใช้เวลาประมาณยี่สิบนาทีครับ", "chai welaa bpramaan yee sip naa-thee khrap", "It takes about 20 minutes."),
+        ("จอดตรงนี้ได้ไหมคะ", "jot trong nee dai mai kha", "Can you stop here?"),
+    ],
+    "Talking about hobbies": [
+        ("คุณชอบทำอะไรคะ", "khun chop tham arai kha", "What do you like doing?"),
+        ("ฉันชอบอ่านหนังสือค่ะ", "chan chop aan nang sue kha", "I like reading books."),
+        ("คุณฟังเพลงไทยไหม", "khun fang phleng thai mai", "Do you listen to Thai music?"),
+        ("ฉันฟังเพลงทุกวันค่ะ", "chan fang phleng thuk wan kha", "I listen to music every day."),
     ],
 }
 
@@ -623,6 +780,33 @@ def install_theme():
           border: 1px solid rgba(16, 39, 36, 0.28) !important;
           border-radius: 8px !important;
           box-shadow: none !important;
+        }
+        .stSelectbox div[data-baseweb="select"] *,
+        div[data-baseweb="popover"] *,
+        ul[role="listbox"] *,
+        li[role="option"] * {
+          color: #102724 !important;
+        }
+        div[data-baseweb="popover"],
+        div[data-baseweb="popover"] > div,
+        ul[role="listbox"] {
+          background: #fffdf7 !important;
+          border: 1px solid rgba(16, 39, 36, 0.18) !important;
+          border-radius: 8px !important;
+          box-shadow: 0 18px 44px rgba(16, 39, 36, 0.18) !important;
+        }
+        li[role="option"] {
+          background: #fffdf7 !important;
+          color: #102724 !important;
+        }
+        li[role="option"]:hover,
+        li[role="option"][aria-selected="true"] {
+          background: #d7ebe5 !important;
+          color: #102724 !important;
+        }
+        svg {
+          color: #102724 !important;
+          fill: #102724 !important;
         }
         .stTextInput input::placeholder,
         .stTextArea textarea::placeholder {
@@ -910,11 +1094,15 @@ Keep the tone encouraging and concrete.
     return response.output_text
 
 
-def ai_conversation_reply(history, learner_reply, scenario, model):
+def ai_conversation_reply(history, learner_reply, scenario, model, use_saved_vocab=True):
     transcript = "\n".join(f"{turn['role']}: {turn['thai']} / {turn.get('english', '')}" for turn in history[-8:])
+    vocab_context = known_vocab_context(60) if use_saved_vocab else ""
     prompt = f"""
 You are a very patient Thai conversation tutor.
 Scenario: {scenario}
+
+Saved learner vocabulary to reuse when natural:
+{vocab_context or "No saved vocabulary requested."}
 
 Recent conversation:
 {transcript}
@@ -929,6 +1117,34 @@ English: <natural English meaning>
 Coach: <one gentle correction or encouragement, under 25 words>
 
 Keep the Thai beginner-friendly and continue the scenario slowly.
+If saved vocabulary is available, deliberately weave one saved word into the conversation when it fits naturally.
+"""
+    response = openai_client().responses.create(model=model, input=prompt)
+    return response.output_text
+
+
+def ai_teach_me(topic, model, include_saved_vocab=True):
+    vocab_context = known_vocab_context(80) if include_saved_vocab else ""
+    lesson_titles = ", ".join(lesson["title"] for lesson in LESSONS)
+    prompt = f"""
+You are a warm, patient Thai teacher for a beginner.
+The learner asked: "Teach me about {topic}"
+
+Available app lesson topics:
+{lesson_titles}
+
+Learner's saved vocabulary:
+{vocab_context or "No saved vocabulary yet."}
+
+Create a mini lesson with:
+1. What this topic means and when to use it.
+2. Core Thai vocabulary with romanization and English.
+3. Sentence patterns.
+4. 6 example sentences, beginner-friendly.
+5. Common mistakes or things to notice.
+6. A small practice exercise with answer key.
+
+Use Thai script, romanization, and English. Keep it clear and encouraging.
 """
     response = openai_client().responses.create(model=model, input=prompt)
     return response.output_text
@@ -1070,11 +1286,42 @@ def render_audio_tab(model):
             st.markdown(thai_lookup_html(explain_transcript(transcript, model)), unsafe_allow_html=True)
 
 
+def render_teach_me_tab(model):
+    st.subheader("Teach me")
+    st.write("Ask for a focused mini-lesson, like `telling time`, `restaurant phrases`, `Thai particles`, or `how to use ไม่`.")
+    if not get_api_key():
+        st.warning("Add your OpenAI API key to use Teach Me.")
+
+    suggestions = [
+        "telling time",
+        "days of the week",
+        "how to use ไม่",
+        "ordering coffee",
+        "Thai polite particles",
+        "asking for directions",
+        "classroom phrases",
+        "my saved vocabulary",
+    ]
+    selected = st.selectbox("Quick topic", suggestions)
+    topic = st.text_input("Teach me about...", value=selected)
+    include_vocab = st.checkbox("Use my saved vocabulary in the explanation", value=True)
+
+    if st.button("Teach me this", type="primary", disabled=not bool(get_api_key() and topic.strip())):
+        with st.spinner("Preparing a patient mini-lesson..."):
+            output = ai_teach_me(topic, model, include_vocab)
+        st.markdown(thai_lookup_html(output), unsafe_allow_html=True)
+
+
 def render_conversation_tab(model):
     st.subheader("Slow conversation practice")
     st.write("Pick a situation, listen to the coach, reply in Thai, romanization, or English, then keep going slowly.")
 
     scenario_name = st.selectbox("Scenario", list(CONVERSATION_SCENARIOS.keys()))
+    use_saved_vocab = st.checkbox("Use my saved vocabulary in this conversation", value=True)
+    saved_cards = load_cards()
+    if use_saved_vocab and saved_cards:
+        preview = ", ".join(f"{thai} ({english})" for _, thai, _, english, *_ in saved_cards[:8])
+        st.caption(f"Conversation coach can draw from: {preview}")
     if "conversation_scenario" not in st.session_state or st.session_state.conversation_scenario != scenario_name:
         st.session_state.conversation_scenario = scenario_name
         st.session_state.conversation_step = 0
@@ -1089,10 +1336,27 @@ def render_conversation_tab(model):
         )
         st.session_state.conversation_step += 1
 
+    def add_vocab_coach_line():
+        if not saved_cards:
+            st.warning("Add vocabulary first, then I can pull it into conversation practice.")
+            return
+        card = saved_cards[st.session_state.conversation_step % len(saved_cards)]
+        _, thai, romanization, english_text, category, notes, *_ = card
+        st.session_state.conversation_history.append(
+            {
+                "role": "Coach",
+                "thai": f"ลองใช้คำว่า {thai} ในประโยคค่ะ",
+                "romanization": f"long chai kham waa {romanization or thai} nai bprayoak kha",
+                "english": f"Try using the word '{thai}' ({english_text}) in a sentence.",
+                "coach": f"Saved vocab practice: {category or 'vocabulary'} · {notes or 'Make a very short sentence.'}",
+            }
+        )
+        st.session_state.conversation_step += 1
+
     if not st.session_state.conversation_history:
         add_scripted_coach_line()
 
-    top_cols = st.columns(3)
+    top_cols = st.columns(4)
     if top_cols[0].button("Restart conversation"):
         st.session_state.conversation_step = 0
         st.session_state.conversation_history = []
@@ -1105,6 +1369,9 @@ def render_conversation_tab(model):
         for line in scenario:
             add_card(line[0], line[1], line[2], "conversation", f"From {scenario_name}.")
         st.success("Conversation lines added to spaced repetition.")
+    if top_cols[3].button("Use my vocab now"):
+        add_vocab_coach_line()
+        st.rerun()
 
     for index, turn in enumerate(st.session_state.conversation_history):
         with st.chat_message("assistant" if turn["role"] == "Coach" else "user"):
@@ -1131,6 +1398,7 @@ def render_conversation_tab(model):
                     learner_reply,
                     scenario_name,
                     model,
+                    use_saved_vocab,
                 )
             parsed = {"role": "Coach", "thai": ai_text, "romanization": "", "english": "", "coach": ""}
             for line in ai_text.splitlines():
@@ -1222,16 +1490,18 @@ def main():
         model = st.text_input("Text model", value=DEFAULT_MODEL)
         st.caption(f"Audio transcription model: `{TRANSCRIBE_MODEL}`")
 
-    tabs = st.tabs(["Vocab + SRS", "Lessons", "Conversation", "AI homework", "Audio upload"])
+    tabs = st.tabs(["Vocab + SRS", "Lessons", "Teach Me", "Conversation", "AI homework", "Audio upload"])
     with tabs[0]:
         render_vocab_tab()
     with tabs[1]:
         render_lessons_tab()
     with tabs[2]:
-        render_conversation_tab(model)
+        render_teach_me_tab(model)
     with tabs[3]:
-        render_homework_tab(model)
+        render_conversation_tab(model)
     with tabs[4]:
+        render_homework_tab(model)
+    with tabs[5]:
         render_audio_tab(model)
 
     st.caption(f"Local date: {datetime.now().date().isoformat()}")

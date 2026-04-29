@@ -44,7 +44,10 @@ The Streamlit version stores spaced-repetition cards in `thai_study.db`.
 
 The Streamlit version includes:
 
-- expanded beginner lessons with teaching notes, patterns, detailed examples, detail sections, drills, and audio buttons
+- 23 expanded beginner lessons with teaching notes, patterns, detailed examples, detail sections, drills, and audio buttons
+- 10 conversation scenarios with normal/slow playback and AI coach replies
+- a Teach Me tab where you can ask for a focused mini-lesson on any Thai topic
+- saved vocabulary can be deliberately pulled into conversation practice
 - hover tooltips for known Thai words in lessons, conversation practice, SRS review, homework output, and audio transcripts
 - slow conversation practice with normal/slow playback and AI coach replies
 - AI homework help
