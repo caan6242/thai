@@ -570,11 +570,11 @@ def install_theme():
           --thai-panel-2: #eef7f4;
         }
         .stApp {
-          background: #dfeee9;
+          background: #d8e9e4;
           color: var(--thai-ink);
         }
         .block-container {
-          background: #f7fbf6;
+          background: #f3faf6;
           border-left: 1px solid rgba(16, 39, 36, 0.08);
           border-right: 1px solid rgba(16, 39, 36, 0.08);
           min-height: 100vh;
@@ -593,15 +593,96 @@ def install_theme():
         h1, h2, h3 {
           color: var(--thai-ink);
         }
+        p, label, span, li, div {
+          color: var(--thai-ink);
+        }
         div[data-testid="stTabs"] button[role="tab"] {
-          background: #e3f1ed;
+          background: #d7ebe5;
+          border: 1px solid rgba(16, 39, 36, 0.18);
           border-radius: 8px 8px 0 0;
           color: var(--thai-deep);
           margin-right: 0.25rem;
         }
+        div[data-testid="stTabs"] button[role="tab"] p {
+          color: var(--thai-deep) !important;
+          font-weight: 700;
+        }
         div[data-testid="stTabs"] button[aria-selected="true"] {
           background: var(--thai-deep);
           color: #ffffff;
+        }
+        div[data-testid="stTabs"] button[aria-selected="true"] p {
+          color: #ffffff !important;
+        }
+        .stTextInput input,
+        .stTextArea textarea,
+        .stSelectbox div[data-baseweb="select"] > div,
+        .stNumberInput input {
+          background: #ffffff !important;
+          color: #102724 !important;
+          border: 1px solid rgba(16, 39, 36, 0.28) !important;
+          border-radius: 8px !important;
+          box-shadow: none !important;
+        }
+        .stTextInput input::placeholder,
+        .stTextArea textarea::placeholder {
+          color: #6a7672 !important;
+          opacity: 1 !important;
+        }
+        .stTextInput label,
+        .stTextArea label,
+        .stSelectbox label,
+        .stFileUploader label {
+          color: #102724 !important;
+          font-weight: 700 !important;
+        }
+        button[kind="secondary"],
+        button[kind="primary"],
+        .stButton > button,
+        .stDownloadButton > button,
+        div[data-testid="stFileUploader"] button {
+          background: #0f6f70 !important;
+          color: #ffffff !important;
+          border: 1px solid #0f6f70 !important;
+          border-radius: 8px !important;
+          font-weight: 800 !important;
+        }
+        button[kind="secondary"] p,
+        button[kind="primary"] p,
+        .stButton > button p,
+        .stDownloadButton > button p,
+        div[data-testid="stFileUploader"] button p,
+        div[data-testid="stFileUploader"] button span {
+          color: #ffffff !important;
+        }
+        button[kind="secondary"]:hover,
+        button[kind="primary"]:hover,
+        .stButton > button:hover {
+          background: #0a5556 !important;
+          border-color: #0a5556 !important;
+        }
+        div[data-testid="stFileUploader"] section,
+        div[data-testid="stFileUploaderDropzone"] {
+          background: #ffffff !important;
+          border: 2px dashed rgba(15, 111, 112, 0.45) !important;
+          border-radius: 8px !important;
+        }
+        div[data-testid="stFileUploader"] section *,
+        div[data-testid="stFileUploaderDropzone"] * {
+          color: #102724 !important;
+        }
+        div[data-testid="stFileUploader"] small {
+          color: #5d6965 !important;
+        }
+        div[data-baseweb="input"],
+        div[data-baseweb="textarea"] {
+          background: #ffffff !important;
+        }
+        code {
+          background: #102724 !important;
+          color: #7ee09a !important;
+          border-radius: 6px !important;
+          padding: 0.12rem 0.35rem !important;
         }
         div[data-testid="stMetric"] {
           background: var(--thai-panel);
