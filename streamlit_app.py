@@ -79,20 +79,68 @@ LESSONS = [
     {
         "title": "Telling Time",
         "goal": "Ask what time it is and understand simple hour answers.",
-        "teach": "กี่ means how many. โมง is an hour marker in many time expressions. แล้ว adds the feeling of 'already/now' in กี่โมงแล้ว.",
-        "pattern": "กี่โมงแล้ว / number + โมง",
-        "vocab": [("เวลา", "welaa", "time"), ("กี่โมง", "gee mong", "what time"), ("โมง", "mong", "o'clock"), ("นาที", "naa-thee", "minute")],
-        "examples": [("กี่โมงแล้ว", "gee mong laew", "What time is it?"), ("สามโมง", "saam mong", "Three o'clock."), ("ห้านาที", "haa naa-thee", "Five minutes.")],
-        "drills": ["Ask what time it is.", "Say three o'clock.", "Say five minutes."],
+        "teach": "Thai time has several systems. For a beginner, start with the practical daytime pattern: number + โมง. Use กี่โมงแล้ว to ask 'What time is it now?' Use นาที for minutes. Everyday speech also uses ตอนเช้า morning, ตอนบ่าย afternoon, ตอนเย็น evening, and ตอนกลางคืน night to make time clearer.",
+        "pattern": "กี่โมงแล้ว / number + โมง + minutes + นาที",
+        "vocab": [
+            ("เวลา", "welaa", "time"),
+            ("กี่โมง", "gee mong", "what time"),
+            ("โมง", "mong", "o'clock / hour marker"),
+            ("นาที", "naa-thee", "minute"),
+            ("ครึ่ง", "khrueng", "half"),
+            ("เช้า", "chao", "morning"),
+            ("บ่าย", "baai", "afternoon"),
+            ("เย็น", "yen", "evening"),
+            ("กลางคืน", "glaang kheun", "night"),
+        ],
+        "examples": [
+            ("กี่โมงแล้ว", "gee mong laew", "What time is it?"),
+            ("หนึ่งโมง", "nueng mong", "One o'clock."),
+            ("สองโมงครึ่ง", "song mong khrueng", "Half past two."),
+            ("สามโมงสิบห้านาที", "saam mong sip haa naa-thee", "3:15."),
+            ("เจ็ดโมงเช้า", "jet mong chao", "7:00 in the morning."),
+            ("บ่ายสองโมง", "baai song mong", "2:00 in the afternoon."),
+            ("หกโมงเย็น", "hok mong yen", "6:00 in the evening."),
+            ("สามทุ่ม", "saam thum", "9:00 at night."),
+        ],
+        "detail_sections": [
+            ("The simple clock", ["1:00 = หนึ่งโมง", "2:00 = สองโมง", "3:00 = สามโมง", "Add นาที for minutes: สามโมงห้านาที = 3:05."]),
+            ("Half past", ["ครึ่ง means half.", "สองโมงครึ่ง = 2:30.", "หกโมงครึ่ง = 6:30."]),
+            ("Useful time-of-day words", ["ตอนเช้า = morning", "ตอนบ่าย = afternoon", "ตอนเย็น = evening", "ตอนกลางคืน = night"]),
+            ("Night-time shortcut", ["Thai often uses ทุ่ม for evening/night hours.", "หนึ่งทุ่ม = 7 PM, สองทุ่ม = 8 PM, สามทุ่ม = 9 PM."]),
+        ],
+        "drills": ["Ask what time it is.", "Say 7:00 in the morning.", "Say 2:30.", "Say 6:15.", "Say 9 PM using ทุ่ม."],
     },
     {
         "title": "Days of the Week",
         "goal": "Talk about today, tomorrow, and yesterday.",
-        "teach": "วัน means day. Add นี้ for this, พรุ่งนี้ for tomorrow, and เมื่อวาน for yesterday.",
-        "pattern": "วันนี้ / พรุ่งนี้ / เมื่อวาน + sentence",
-        "vocab": [("วัน", "wan", "day"), ("วันนี้", "wan nee", "today"), ("พรุ่งนี้", "phrung nee", "tomorrow"), ("เมื่อวาน", "muea waan", "yesterday")],
-        "examples": [("วันนี้วันอะไร", "wan nee wan arai", "What day is today?"), ("พรุ่งนี้ฉันเรียนภาษาไทย", "phrung nee chan rian phasaa thai", "Tomorrow I study Thai."), ("เมื่อวานฉันดื่มกาแฟ", "muea waan chan duem gaa-fae", "Yesterday I drank coffee.")],
-        "drills": ["Ask what day today is.", "Say you study Thai tomorrow.", "Make one sentence with วันนี้."],
+        "teach": "วัน means day. Thai weekdays are named with วัน + a day name. You will hear these constantly for class schedules, appointments, and homework. Start by memorizing the full set, then practice today/tomorrow/yesterday sentences.",
+        "pattern": "วัน + weekday / วันนี้เป็นวัน...",
+        "vocab": [
+            ("วัน", "wan", "day"),
+            ("วันจันทร์", "wan jan", "Monday"),
+            ("วันอังคาร", "wan ang-khaan", "Tuesday"),
+            ("วันพุธ", "wan phut", "Wednesday"),
+            ("วันพฤหัสบดี", "wan pha-rue-hat-sa-bor-dee", "Thursday"),
+            ("วันศุกร์", "wan suk", "Friday"),
+            ("วันเสาร์", "wan sao", "Saturday"),
+            ("วันอาทิตย์", "wan aa-thit", "Sunday"),
+            ("วันนี้", "wan nee", "today"),
+            ("พรุ่งนี้", "phrung nee", "tomorrow"),
+            ("เมื่อวาน", "muea waan", "yesterday"),
+        ],
+        "examples": [
+            ("วันนี้วันอะไร", "wan nee wan arai", "What day is today?"),
+            ("วันนี้เป็นวันจันทร์", "wan nee pen wan jan", "Today is Monday."),
+            ("พรุ่งนี้เป็นวันศุกร์", "phrung nee pen wan suk", "Tomorrow is Friday."),
+            ("เมื่อวานเป็นวันอาทิตย์", "muea waan pen wan aa-thit", "Yesterday was Sunday."),
+            ("ฉันเรียนภาษาไทยวันพุธ", "chan rian phasaa thai wan phut", "I study Thai on Wednesday."),
+        ],
+        "detail_sections": [
+            ("All weekdays", ["วันจันทร์ = Monday", "วันอังคาร = Tuesday", "วันพุธ = Wednesday", "วันพฤหัสบดี = Thursday", "วันศุกร์ = Friday", "วันเสาร์ = Saturday", "วันอาทิตย์ = Sunday"]),
+            ("Schedule pattern", ["ฉันเรียน...วันพุธ = I study...on Wednesday.", "ทำงานวันจันทร์ = work on Monday.", "ไม่มีเรียนวันเสาร์ = no class on Saturday."]),
+            ("Today/tomorrow/yesterday", ["วันนี้ = today", "พรุ่งนี้ = tomorrow", "เมื่อวาน = yesterday", "Use เป็น when saying 'is/was a day': วันนี้เป็นวันจันทร์."]),
+        ],
+        "drills": ["Read all seven days out loud.", "Say today is Monday.", "Say you study Thai on Wednesday.", "Say no class on Saturday.", "Ask what day today is."],
     },
     {
         "title": "Colors",
@@ -149,6 +197,225 @@ LESSONS = [
         "drills": ["Make a yes/no question.", "Ask where something is.", "Ask when class is."],
     },
 ]
+
+LESSON_EXPANSIONS = {
+    "Greetings and Politeness": {
+        "vocab": [
+            ("สบายดีไหม", "sabai dee mai", "how are you?"),
+            ("ไม่เป็นไร", "mai pen rai", "it's okay / no problem"),
+            ("ขอโทษ", "khor thot", "sorry / excuse me"),
+            ("ลาก่อน", "laa gon", "goodbye"),
+        ],
+        "examples": [
+            ("คุณสบายดีไหมคะ", "khun sabai dee mai kha", "How are you?"),
+            ("ไม่เป็นไรครับ", "mai pen rai khrap", "It's okay."),
+            ("ขอโทษค่ะ", "khor thot kha", "Sorry / excuse me."),
+        ],
+        "detail_sections": [
+            ("Polite endings", ["ค่ะ and ครับ do not translate neatly; they soften the sentence.", "Use คะ for many polite questions from female speakers.", "Short answers can still sound polite: ใช่ค่ะ, ไม่ครับ."]),
+            ("Greeting vs goodbye", ["สวัสดี can mean hello or goodbye.", "ลาก่อน is goodbye, but it can sound more final than สวัสดี.", "ขอบคุณ + polite particle is the safest thank-you form."]),
+            ("Beginner trap", ["Do not translate every English word.", "Thai often says a short phrase plus a polite ending.", "สวัสดีค่ะ is complete by itself."]),
+        ],
+        "drills": ["Ask how someone is.", "Say excuse me politely.", "Reply no problem.", "Make hello sound polite.", "Make thank you sound polite."],
+    },
+    "Introductions": {
+        "vocab": [
+            ("คุณ", "khun", "you"),
+            ("มาจาก", "maa jaak", "come from"),
+            ("ประเทศ", "prathet", "country"),
+            ("ยินดี", "yin dee", "pleased / glad"),
+            ("รู้จัก", "ruu jak", "know / meet"),
+        ],
+        "examples": [
+            ("ฉันมาจากสวีเดน", "chan maa jaak sa-wee-den", "I come from Sweden."),
+            ("คุณมาจากประเทศอะไร", "khun maa jaak prathet arai", "What country are you from?"),
+            ("ยินดีที่ได้รู้จักครับ", "yin dee tee dai ruu jak khrap", "Nice to meet you."),
+        ],
+        "detail_sections": [
+            ("Name pattern", ["ฉันชื่อ... = My name is...", "ผมชื่อ... is another common 'my name is...' pattern.", "Thai does not need a separate word for 'am' here."]),
+            ("Asking back", ["คุณชื่ออะไร = What is your name?", "คุณมาจากประเทศอะไร = What country are you from?", "Add คะ/ครับ if you want it polite."]),
+            ("Pronoun comfort", ["ฉัน is broadly useful for beginners.", "ผม is common for male speakers.", "คุณ is polite and safe for 'you'."]),
+        ],
+        "drills": ["Say your name.", "Ask for someone's name.", "Say where you are from.", "Ask what country someone is from.", "Say nice to meet you."],
+    },
+    "Yes, No, and Not": {
+        "vocab": [
+            ("ชอบ", "chop", "like"),
+            ("เข้าใจ", "khao jai", "understand"),
+            ("ไม่เข้าใจ", "mai khao jai", "do not understand"),
+            ("มี", "mee", "have / there is"),
+            ("ไม่มี", "mai mee", "do not have / there is no"),
+        ],
+        "examples": [
+            ("ฉันไม่เข้าใจ", "chan mai khao jai", "I do not understand."),
+            ("ไม่มีค่ะ", "mai mee kha", "There is none / I do not have it."),
+            ("คุณชอบไหม", "khun chop mai", "Do you like it?"),
+        ],
+        "detail_sections": [
+            ("Where ไม่ goes", ["Put ไม่ before the word you negate.", "ชอบ = like, ไม่ชอบ = do not like.", "เข้าใจ = understand, ไม่เข้าใจ = do not understand."]),
+            ("ใช่ vs ได้", ["ใช่ answers whether something is correct.", "ได้ often means can/okay/allowed.", "ไม่ใช่ means no/not correct; ไม่ได้ means cannot/not okay."]),
+            ("Useful classroom phrase", ["ฉันไม่เข้าใจ is one of the most useful beginner sentences.", "พูดช้าๆได้ไหม = Can you speak slowly?", "พูดอีกครั้งได้ไหม = Can you say it again?"]),
+        ],
+        "drills": ["Say I do not understand.", "Say I do not like coffee.", "Answer yes politely.", "Answer no/not correct.", "Say cannot."],
+    },
+    "Numbers 1-10": {
+        "vocab": [
+            ("สี่", "see", "four"),
+            ("ห้า", "haa", "five"),
+            ("หก", "hok", "six"),
+            ("เจ็ด", "jet", "seven"),
+            ("แปด", "bpaet", "eight"),
+            ("เก้า", "gao", "nine"),
+            ("ศูนย์", "suun", "zero"),
+        ],
+        "examples": [
+            ("ศูนย์ หนึ่ง สอง สาม", "suun nueng song saam", "Zero, one, two, three."),
+            ("เจ็ดบาท", "jet baat", "Seven baht."),
+            ("เก้าสิบบาท", "gao sip baat", "Ninety baht."),
+        ],
+        "detail_sections": [
+            ("Full set", ["ศูนย์ = 0", "หนึ่ง = 1", "สอง = 2", "สาม = 3", "สี่ = 4", "ห้า = 5", "หก = 6", "เจ็ด = 7", "แปด = 8", "เก้า = 9", "สิบ = 10"]),
+            ("Prices", ["number + บาท = price in baht.", "ห้าบาท = 5 baht.", "สิบบาท = 10 baht."]),
+            ("Building tens", ["สองสิบ is understandable but ยี่สิบ is the normal word for 20.", "สามสิบ = 30, สี่สิบ = 40, ห้าสิบ = 50.", "For now, recognize สิบ as the ten marker."]),
+        ],
+        "drills": ["Count 0 to 10.", "Say 7 baht.", "Say 90 baht.", "Listen to 1-10 twice.", "Write your phone number using Thai numbers."],
+    },
+    "Colors": {
+        "vocab": [
+            ("สีดำ", "see dam", "black"),
+            ("สีขาว", "see khaao", "white"),
+            ("สีเหลือง", "see lueang", "yellow"),
+            ("สีชมพู", "see chom-phuu", "pink"),
+            ("สีม่วง", "see muang", "purple"),
+            ("สีน้ำเงิน", "see nam ngoen", "dark blue"),
+        ],
+        "examples": [
+            ("รถสีดำ", "rot see dam", "Black car."),
+            ("กระเป๋าสีขาว", "gra-pao see khaao", "White bag."),
+            ("ดอกไม้สีเหลือง", "dok mai see lueang", "Yellow flower."),
+        ],
+        "detail_sections": [
+            ("Adjective order", ["Thai color words come after the noun.", "เสื้อสีแดง literally means shirt color red.", "Do not put สีแดง before the noun when describing it."]),
+            ("สีฟ้า vs สีน้ำเงิน", ["สีฟ้า is sky blue/light blue.", "สีน้ำเงิน is dark blue/navy.", "Both can translate as blue, but they feel different."]),
+            ("Useful classroom task", ["Look around your room and label five objects.", "Say noun + color: โต๊ะสีขาว, เก้าอี้สีดำ.", "Repeat with no English in between."]),
+        ],
+        "drills": ["Describe your shirt.", "Say black, white, yellow.", "Name two blue things.", "Make three noun + color phrases.", "Ask what color something is: สีอะไร."],
+    },
+    "Household Items": {
+        "vocab": [
+            ("ห้อง", "hong", "room"),
+            ("ห้องนอน", "hong non", "bedroom"),
+            ("ห้องครัว", "hong khrua", "kitchen"),
+            ("ประตู", "bpra-tuu", "door"),
+            ("หน้าต่าง", "naa-taang", "window"),
+            ("ตู้เย็น", "tuu yen", "refrigerator"),
+        ],
+        "examples": [
+            ("ประตูอยู่ทางซ้าย", "bpra-tuu yuu thaang saai", "The door is on the left."),
+            ("ตู้เย็นอยู่ในห้องครัว", "tuu yen yuu nai hong khrua", "The fridge is in the kitchen."),
+            ("นี่คือห้องนอนของฉัน", "nee khue hong non khong chan", "This is my bedroom."),
+        ],
+        "detail_sections": [
+            ("นี่คือ", ["นี่คือ means this is.", "Use it to identify objects: นี่คือโต๊ะ.", "It is a very useful beginner presentation phrase."]),
+            ("อยู่", ["อยู่ tells where something is located.", "โต๊ะอยู่ในห้อง = The table is in the room.", "Add left/right: อยู่ทางซ้าย, อยู่ทางขวา."]),
+            ("Rooms", ["ห้อง means room.", "ห้องนอน = bedroom, ห้องครัว = kitchen, ห้องน้ำ = bathroom.", "Many room words are compounds."]),
+        ],
+        "drills": ["Name five things in your room.", "Say where your bed is.", "Use นี่คือ with three objects.", "Use อยู่ with one room.", "Ask where the bathroom is."],
+    },
+    "Food and Drink": {
+        "vocab": [
+            ("ชา", "chaa", "tea"),
+            ("นม", "nom", "milk"),
+            ("ไก่", "gai", "chicken"),
+            ("หมู", "muu", "pork"),
+            ("ผัก", "phak", "vegetables"),
+            ("เผ็ด", "phet", "spicy"),
+        ],
+        "examples": [
+            ("ขอชาเย็นหนึ่งแก้ว", "khor chaa yen nueng gaew", "One iced tea, please."),
+            ("ไม่เผ็ดได้ไหม", "mai phet dai mai", "Can it be not spicy?"),
+            ("ฉันไม่กินหมู", "chan mai gin muu", "I do not eat pork."),
+        ],
+        "detail_sections": [
+            ("Ordering with ขอ", ["ขอ makes a polite request.", "ขอน้ำ = water please.", "Add amount/classifier: ขอน้ำหนึ่งแก้ว."]),
+            ("Classifiers", ["แก้ว is used for a glass/cup.", "จาน can be used for a plate/dish.", "Beginner shortcut: memorize common full phrases first."]),
+            ("Preferences", ["ชอบ = like.", "ไม่ชอบ = do not like.", "ไม่กิน... = I do not eat..."]),
+        ],
+        "drills": ["Order iced tea.", "Say not spicy, please.", "Say I do not eat pork.", "Say I like coffee.", "Ask for one glass of water."],
+    },
+    "Shopping and Prices": {
+        "vocab": [
+            ("ถูก", "thuuk", "cheap"),
+            ("ลดราคา", "lot raa-khaa", "discount / lower the price"),
+            ("ซื้อ", "sue", "buy"),
+            ("ขาย", "khaai", "sell"),
+            ("อันนี้", "an nee", "this one"),
+            ("เงิน", "ngoen", "money"),
+        ],
+        "examples": [
+            ("อันนี้ราคาเท่าไหร่", "an nee raa-khaa tao rai", "How much is this one?"),
+            ("ลดราคาได้ไหม", "lot raa-khaa dai mai", "Can you lower the price?"),
+            ("ถูกมากค่ะ", "thuuk maak kha", "Very cheap."),
+        ],
+        "detail_sections": [
+            ("Asking about this one", ["อันนี้ means this one.", "อันนี้ราคาเท่าไหร่ is more specific than ราคาเท่าไหร่.", "Use it while pointing at an item."]),
+            ("แพง vs ถูก", ["แพง = expensive.", "ถูก = cheap.", "มาก = very, so แพงมาก = very expensive."]),
+            ("Bargaining phrase", ["ลดราคาได้ไหม = Can you reduce the price?", "Use politely and gently.", "Add คะ/ครับ to soften it."]),
+        ],
+        "drills": ["Ask how much this one is.", "Say very expensive.", "Say very cheap.", "Ask for a discount.", "Say I want to buy this one."],
+    },
+    "Directions": {
+        "vocab": [
+            ("ทาง", "thaang", "way / direction"),
+            ("ข้างหน้า", "khaang naa", "in front / ahead"),
+            ("ข้างหลัง", "khaang lang", "behind"),
+            ("ใกล้", "glai", "near"),
+            ("ไกล", "glai", "far"),
+            ("ที่นี่", "tee nee", "here"),
+        ],
+        "examples": [
+            ("ห้องน้ำอยู่ข้างหน้า", "hong nam yuu khaang naa", "The bathroom is ahead."),
+            ("ร้านอาหารอยู่ใกล้ไหม", "raan aa-haan yuu glai mai", "Is the restaurant nearby?"),
+            ("ไปทางซ้ายแล้วตรงไป", "pai thaang saai laew trong pai", "Go left, then go straight."),
+        ],
+        "detail_sections": [
+            ("Movement words", ["ไป = go.", "ตรงไป = go straight.", "เลี้ยว = turn.", "Use เลี้ยวซ้าย / เลี้ยวขวา."]),
+            ("Location words", ["อยู่ tells where something is.", "ใกล้ = near, ไกล = far.", "ที่นี่ = here, ที่นั่น = there."]),
+            ("Direction chain", ["Thai directions can chain actions.", "ตรงไปแล้วเลี้ยวซ้าย = go straight then turn left.", "แล้ว means then/already."]),
+        ],
+        "drills": ["Say turn left.", "Say turn right.", "Ask if it is near.", "Say the bathroom is ahead.", "Give two-step directions."],
+    },
+    "Questions": {
+        "vocab": [
+            ("ใคร", "khrai", "who"),
+            ("กี่", "gee", "how many"),
+            ("อย่างไร", "yaang rai", "how, formal"),
+            ("ใช่ไหม", "chai mai", "right? / isn't it?"),
+            ("หรือเปล่า", "rue bplao", "or not?"),
+        ],
+        "examples": [
+            ("นี่คือใคร", "nee khue khrai", "Who is this?"),
+            ("มีกี่คน", "mee gee khon", "How many people are there?"),
+            ("คุณเรียนภาษาไทยใช่ไหม", "khun rian phasaa thai chai mai", "You study Thai, right?"),
+        ],
+        "detail_sections": [
+            ("ไหม questions", ["Put ไหม at the end of a statement.", "คุณชอบกาแฟ = You like coffee.", "คุณชอบกาแฟไหม = Do you like coffee?"]),
+            ("Question words stay in place", ["ที่ไหน appears where the place answer would go.", "ห้องน้ำอยู่ที่ไหน = Bathroom is where?", "เมื่อไหร่ appears where the time answer would go."]),
+            ("Checking questions", ["ใช่ไหม checks if something is true.", "หรือเปล่า asks 'or not?'", "Both are very common in speech."]),
+        ],
+        "drills": ["Make a ไหม question.", "Ask where the bathroom is.", "Ask when class is.", "Ask who this is.", "Ask how many people."],
+    },
+}
+
+for lesson in LESSONS:
+    expansion = LESSON_EXPANSIONS.get(lesson["title"], {})
+    for key in ("vocab", "examples", "drills"):
+        existing = lesson.get(key, [])
+        seen = {item[0] if isinstance(item, tuple) else item for item in existing}
+        additions = [item for item in expansion.get(key, []) if (item[0] if isinstance(item, tuple) else item) not in seen]
+        lesson[key] = existing + additions
+    if expansion.get("detail_sections"):
+        lesson["detail_sections"] = lesson.get("detail_sections", []) + expansion["detail_sections"]
 
 CONVERSATION_SCENARIOS = {
     "Cafe order": [
@@ -285,6 +552,217 @@ def has_secret_api_key():
         return "OPENAI_API_KEY" in st.secrets
     except Exception:
         return False
+
+
+def install_theme():
+    st.markdown(
+        """
+        <style>
+        :root {
+          --thai-ink: #18211f;
+          --thai-muted: #5d6965;
+          --thai-line: #dbe4df;
+          --thai-accent: #0f8b8d;
+          --thai-gold: #d99b2b;
+          --thai-rose: #c85563;
+          --thai-deep: #102724;
+          --thai-panel: #fffdf7;
+          --thai-panel-2: #eef7f4;
+        }
+        .stApp {
+          background: #dfeee9;
+          color: var(--thai-ink);
+        }
+        .block-container {
+          background: #f7fbf6;
+          border-left: 1px solid rgba(16, 39, 36, 0.08);
+          border-right: 1px solid rgba(16, 39, 36, 0.08);
+          min-height: 100vh;
+        }
+        [data-testid="stSidebar"] {
+          background: var(--thai-deep);
+          border-right: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        [data-testid="stSidebar"] * {
+          color: #f3fbf8 !important;
+        }
+        [data-testid="stSidebar"] input {
+          background: #ffffff !important;
+          color: #18211f !important;
+        }
+        h1, h2, h3 {
+          color: var(--thai-ink);
+        }
+        div[data-testid="stTabs"] button[role="tab"] {
+          background: #e3f1ed;
+          border-radius: 8px 8px 0 0;
+          color: var(--thai-deep);
+          margin-right: 0.25rem;
+        }
+        div[data-testid="stTabs"] button[aria-selected="true"] {
+          background: var(--thai-deep);
+          color: #ffffff;
+        }
+        div[data-testid="stMetric"] {
+          background: var(--thai-panel);
+          border: 1px solid rgba(16, 39, 36, 0.14);
+          border-radius: 8px;
+          padding: 0.8rem;
+          box-shadow: 0 12px 28px rgba(16, 39, 36, 0.08);
+        }
+        div[data-testid="stVerticalBlockBorderWrapper"] {
+          background: var(--thai-panel) !important;
+          border-color: rgba(16, 39, 36, 0.16) !important;
+          box-shadow: 0 14px 34px rgba(16, 39, 36, 0.10);
+        }
+        .thai-lesson-hero {
+          padding: 1.1rem 1.25rem;
+          border: 1px solid rgba(16, 39, 36, 0.16);
+          border-radius: 8px;
+          background:
+            linear-gradient(135deg, rgba(15, 139, 141, 0.22), transparent 58%),
+            linear-gradient(35deg, rgba(217, 155, 43, 0.20), transparent 48%),
+            #fffdf7;
+          box-shadow: 0 18px 42px rgba(16, 39, 36, 0.12);
+          margin-bottom: 1rem;
+        }
+        .thai-lesson-hero p {
+          color: var(--thai-muted);
+          font-size: 1.02rem;
+          line-height: 1.6;
+        }
+        .thai-text {
+          font-size: 1.55rem;
+          font-weight: 800;
+          line-height: 1.35;
+        }
+        .lookup {
+          display: inline-block;
+          border-bottom: 2px solid rgba(15, 139, 141, 0.75);
+          background: #fff0bf;
+          border-radius: 5px;
+          padding: 0 0.13rem;
+          cursor: help;
+          position: relative;
+        }
+        .lookup:hover {
+          background: #bfe6df;
+        }
+        .lookup:hover::after {
+          content: attr(data-tip);
+          position: absolute;
+          z-index: 50;
+          left: 0;
+          top: 1.9rem;
+          min-width: 210px;
+          max-width: 320px;
+          padding: 0.7rem;
+          border: 1px solid rgba(15, 139, 141, 0.3);
+          border-radius: 8px;
+          background: #102724;
+          color: #ffffff;
+          font-size: 0.92rem;
+          font-weight: 500;
+          line-height: 1.4;
+          box-shadow: 0 16px 42px rgba(24, 33, 31, 0.18);
+        }
+        .pattern-card, .detail-card {
+          border: 1px solid rgba(16, 39, 36, 0.15);
+          border-radius: 8px;
+          background: #fffdf7;
+          padding: 0.85rem;
+          margin: 0.55rem 0;
+          box-shadow: 0 10px 24px rgba(16, 39, 36, 0.07);
+        }
+        .detail-card {
+          background: #eef7f4;
+        }
+        .detail-card strong {
+          color: var(--thai-accent);
+        }
+        .romanization {
+          color: var(--thai-rose);
+          font-weight: 700;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def glossary_words():
+    words = {}
+    for thai, romanization, english_text, *_ in SAMPLE_WORDS:
+        words[thai] = (romanization, english_text)
+    try:
+        for _, thai, romanization, english_text, *_ in load_cards():
+            if thai and english_text:
+                words[thai] = (romanization or "", english_text)
+    except Exception:
+        pass
+    for lesson in LESSONS:
+        for thai, romanization, english_text in lesson["vocab"]:
+            words[thai] = (romanization, english_text)
+        for thai, romanization, english_text in lesson["examples"]:
+            words.setdefault(thai, (romanization, english_text))
+    extra = [
+        ("คุณ", "khun", "you"),
+        ("สบายดี", "sabai dee", "well / comfortable"),
+        ("รับ", "rap", "receive / take"),
+        ("อะไร", "arai", "what"),
+        ("ดี", "dee", "good"),
+        ("คะ", "kha", "polite question particle"),
+        ("ร้อน", "ron", "hot"),
+        ("เย็น", "yen", "cold / evening"),
+        ("หรือ", "rue", "or"),
+        ("ทั้งหมด", "thang mot", "total / all"),
+        ("ห้าสิบ", "haa sip", "fifty"),
+        ("มาจาก", "maa jaak", "come from"),
+        ("ประเทศ", "prathet", "country"),
+        ("ยินดี", "yin dee", "pleased / glad"),
+        ("รู้จัก", "ruu jak", "know / meet"),
+        ("สถานี", "sathanee", "station"),
+        ("รถไฟฟ้า", "rot fai faa", "skytrain / electric train"),
+        ("ยังไง", "yang ngai", "how"),
+        ("แล้ว", "laew", "already / then"),
+        ("เลี้ยว", "liao", "turn"),
+        ("อยู่", "yuu", "is located / stay"),
+        ("ใกล้", "glai", "near"),
+        ("มาก", "maak", "very"),
+        ("ภาษาไทย", "phasaa thai", "Thai language"),
+        ("เรียน", "rian", "study / learn"),
+        ("ไม่มี", "mai mee", "do not have / there is no"),
+    ]
+    for thai, romanization, english_text in extra:
+        words.setdefault(thai, (romanization, english_text))
+    return sorted(words.items(), key=lambda item: len(item[0]), reverse=True)
+
+
+def thai_lookup_html(text):
+    escaped = html.escape(text)
+    output = ""
+    index = 0
+    words = glossary_words()
+    while index < len(escaped):
+        match = None
+        for thai, (romanization, english_text) in words:
+            escaped_thai = html.escape(thai)
+            if escaped.startswith(escaped_thai, index):
+                match = (escaped_thai, romanization, english_text)
+                break
+        if match:
+            thai, romanization, english_text = match
+            tip = html.escape(f"{romanization} = {english_text}", quote=True)
+            output += f'<span class="lookup" data-tip="{tip}" title="{tip}">{thai}</span>'
+            index += len(thai)
+        else:
+            output += escaped[index]
+            index += 1
+    return output
+
+
+def thai_markdown(text, size_class="thai-text"):
+    st.markdown(f'<div class="{size_class}">{thai_lookup_html(text)}</div>', unsafe_allow_html=True)
 
 
 def openai_client():
@@ -448,12 +926,12 @@ def render_vocab_tab():
         card = due_cards[0]
         _, thai, romanization, english, category, notes, *_ = card
         with st.container(border=True):
-            st.markdown(f"## {thai}")
+            thai_markdown(thai)
             st.caption(f"{romanization or 'No romanization'} · {category or 'uncategorized'}")
             with st.expander("Show answer"):
-                st.write(english)
+                st.markdown(thai_lookup_html(english), unsafe_allow_html=True)
                 if notes:
-                    st.info(notes)
+                    st.markdown(thai_lookup_html(notes), unsafe_allow_html=True)
             cols = st.columns(3)
             if cols[0].button("Again"):
                 review_card(card, "again")
@@ -490,7 +968,7 @@ def render_homework_tab(model):
     homework = st.text_area("Paste your Thai homework, instructions, or your attempted answer", height=220)
     if st.button("Explain my homework", type="primary", disabled=not bool(get_api_key())):
         with st.spinner("Thinking like a patient tutor..."):
-            st.markdown(ai_homework_help(homework, model))
+            st.markdown(thai_lookup_html(ai_homework_help(homework, model)), unsafe_allow_html=True)
 
 
 def render_audio_tab(model):
@@ -506,9 +984,9 @@ def render_audio_tab(model):
         with st.spinner("Transcribing Thai audio..."):
             transcript = transcribe_audio(audio)
         st.markdown("### Transcript")
-        st.write(transcript)
+        st.markdown(thai_lookup_html(transcript), unsafe_allow_html=True)
         with st.spinner("Building listening notes..."):
-            st.markdown(explain_transcript(transcript, model))
+            st.markdown(thai_lookup_html(explain_transcript(transcript, model)), unsafe_allow_html=True)
 
 
 def render_conversation_tab(model):
@@ -549,9 +1027,9 @@ def render_conversation_tab(model):
 
     for index, turn in enumerate(st.session_state.conversation_history):
         with st.chat_message("assistant" if turn["role"] == "Coach" else "user"):
-            st.markdown(f"### {turn['thai']}")
+            thai_markdown(turn["thai"])
             if turn.get("romanization"):
-                st.caption(turn["romanization"])
+                st.markdown(f'<div class="romanization">{html.escape(turn["romanization"])}</div>', unsafe_allow_html=True)
             if turn.get("english"):
                 st.write(turn["english"])
             if turn.get("coach"):
@@ -595,30 +1073,48 @@ def render_lessons_tab():
     choice = st.selectbox("Choose a lesson", lesson_titles)
     lesson = next(item for item in LESSONS if item["title"] == choice)
 
-    st.markdown(f"## {lesson['title']}")
-    st.success(lesson["goal"])
+    st.markdown(
+        f"""
+        <div class="thai-lesson-hero">
+          <h2>{html.escape(lesson["title"])}</h2>
+          <p>{html.escape(lesson["goal"])}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
     st.markdown("### Teaching note")
-    st.write(lesson["teach"])
+    st.markdown(thai_lookup_html(lesson["teach"]), unsafe_allow_html=True)
     st.markdown("### Pattern")
-    st.code(lesson["pattern"])
+    st.markdown(f'<div class="pattern-card">{thai_lookup_html(lesson["pattern"])}</div>', unsafe_allow_html=True)
 
     st.markdown("### Core vocabulary")
-    st.dataframe(
-        [{"Thai": thai, "Romanization": romanization, "English": english_text} for thai, romanization, english_text in lesson["vocab"]],
-        use_container_width=True,
-        hide_index=True,
-    )
+    vocab_cols = st.columns(2)
+    for index, (thai, romanization, english_text) in enumerate(lesson["vocab"]):
+        with vocab_cols[index % 2]:
+            with st.container(border=True):
+                thai_markdown(thai)
+                st.markdown(f'<div class="romanization">{html.escape(romanization)}</div>', unsafe_allow_html=True)
+                st.write(english_text)
 
     st.markdown("### Example phrases")
     for index, (thai, romanization, english_text) in enumerate(lesson["examples"]):
         with st.container(border=True):
             left, right = st.columns([4, 1])
             with left:
-                st.markdown(f"### {thai}")
-                st.caption(romanization)
+                thai_markdown(thai)
+                st.markdown(f'<div class="romanization">{html.escape(romanization)}</div>', unsafe_allow_html=True)
                 st.write(english_text)
             with right:
                 speak_button(thai, "Play", 0.72, key=f"lesson-{choice}-{index}")
+
+    if lesson.get("detail_sections"):
+        st.markdown("### Details")
+        for title, bullets in lesson["detail_sections"]:
+            bullet_html = "".join(f"<li>{thai_lookup_html(item)}</li>" for item in bullets)
+            st.markdown(
+                f'<div class="detail-card"><strong>{html.escape(title)}</strong><ul>{bullet_html}</ul></div>',
+                unsafe_allow_html=True,
+            )
 
     st.markdown("### Practice drills")
     for drill in lesson["drills"]:
@@ -632,6 +1128,7 @@ def render_lessons_tab():
 
 def main():
     st.set_page_config(page_title="Thai Study Studio", page_icon="ท", layout="wide")
+    install_theme()
     init_db()
 
     st.title("Thai Study Studio")
